@@ -1,0 +1,36 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html, body, .root {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+body, .app {
+  background: #f5f5f5;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  justify-items: center;
+}
+
+.shows-card {
+  align-self: center;
+  justify-self: center;
+}
+
+.shows-title {
+  justify-self: center;
+  text-align: center;
+}
