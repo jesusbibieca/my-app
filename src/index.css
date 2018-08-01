@@ -8,7 +8,7 @@ html, body, .root {
   height: 100%;
 }
 body {
-  margin: 1%;
+  margin: 1% auto;
   padding: auto;
   font-family: sans-serif;
   line-height: 1.5;
@@ -47,7 +47,7 @@ body, .app {
 
 .wrapper {
   display: grid;
-  grid-template-columns: 75% 25%;
+  grid-template-columns: 60% 40%;
   grid-template-rows: 10vw 30vw 10vw;
   grid-gap: 1em;
   background-color: #fff;
@@ -62,15 +62,15 @@ body, .app {
   font-size: 150%;
 }
 
-header,
-footer {
+.header,
+.footer {
   grid-column: 1 / span 2;
 }
 
-header,
-main,
-aside,
-footer {
+.header,
+.main,
+.aside,
+.footer {
   background: #eaeaea;
   display: flex;
   align-items: center;
