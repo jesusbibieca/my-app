@@ -71,8 +71,11 @@ body, .app {
 .main,
 .aside,
 .footer {
-  background: #eaeaea;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.main {
+  text-align: justify;
 }

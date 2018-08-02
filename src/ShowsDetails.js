@@ -1,14 +1,15 @@
 import React from  'react';
 
-function ShowsDetails() {
+function ShowsDetails(props) {
   return(
     <div className='wrapper'>
-      <div class="header">Header</div>
-      <div class="main">
-        Content
+      <div className="header">
+        <h1>{props.name}</h1>
       </div>
-      <div class="aside">Sidebar</div>
-      <div class="footer">Footer</div>
+      <div className="main"><span dangerouslySetInnerHTML={{__html: props.description}} /></div>
+      <div className="aside">
+        <img src={props.image} alt='TV-Show' width='280' height='350' />
+        </div>
     </div>
   )
 };
